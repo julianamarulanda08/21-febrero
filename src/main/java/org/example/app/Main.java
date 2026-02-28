@@ -3,48 +3,44 @@ import org.example.models.Person;
 import org.example.models.Person.;
 public class Main {
 
+
     public class Main {
         public static void main(String[] args) {
             System.out.println("Hello world!");
-            co.edu.cesde.ga.models.Person person = new Persons();
-            co.edu.cesde.ga.models.Person person2 = new co.edu.cesde.ga.models.Person();
-            Persons person3 = new Persons();
-            Person. ("john");
+            Person person = new Person();
+            Person person2 = new Person();
+            Person person3 = new Person();
+
+            person.setFirstName("Jose");
             person.getFirstName();
-            person2.set ("Juan");
+            person2.setFirstName("Maria");
             person2.getFirstName();
-            person3.setFirstName("Erika");
+            person3.setFirstName("Juan");
             person3.getFirstName();
 
-            Persons person4= new Person(1L,"1,2,3","256","15437","Luis","Goenaga",boolean)
-            person4.getFirstName();
 
+            Person person4 = new Person(1L, "001", "123456789", "Jose", "Perez","vasquez@gmail.com", true);
+            person.getFirstName();
 
-            public class Student extends Person {
+            System.out.println(person.toString());
+            System.out.println(person2.toString());
+            System.out.println(person3.toString());
+            System.out.println(person4.toString());
 
-                private String birthDate;
+            Student student = new Student();
+            student.setFirstName("Carlos");
+            student.setBirthDate("01/01/2000");
+            System.out.println(student.toString());
 
-                public Student() {
-                    super();
-                }
+            Teacher teacher = new Teacher();
+            teacher.setFirstName("Ana");
+            System.out.println(teacher.toString());
 
-                public Student(Long userId, String code, String documentNumber, String firstName, String lastName, String email, Boolean status, String birthDate) {
-                    super(userId, code, documentNumber, firstName, lastName, email, status);
-                    this.birthDate = birthDate;
-                }
+            Student student2 = new Student(2L, "002", "987654321", "Maria", "Gomez","vasquez@.com", true, "02/02/2001");
+            System.out.println(student2.toString());
 
-                public String getBirthDate() {
-                    return birthDate;
-                }
-
-                public void setBirthDate(String birthDate) {
-                    this.birthDate = birthDate;
-                }
-            }
-
-
+            Teacher teacher2 = new Teacher(3L, "003", "456789123", "Juan", "Lopez","vasquez@.com", true, "Ingeniero");
+            System.out.println(teacher2.toString());
         }
-    }
 
-    private void person2(String juan) {
     }
